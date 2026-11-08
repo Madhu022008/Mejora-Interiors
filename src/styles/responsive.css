@@ -1,0 +1,78 @@
+/* ===================================================================
+   MEJORA INTERIORS — RESPONSIVE ADAPTATIONS
+   =================================================================== */
+
+@media (max-width: 1200px) {
+  .site-navbar {
+    padding: 1.5rem 2.5rem;
+  }
+  .page-wrapper {
+    padding: 7rem 2.5rem 4rem 2.5rem;
+  }
+  .footer-top-grid {
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .site-navbar {
+    padding: 1.25rem 1.75rem;
+  }
+  .nav-items-right {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-inner-content {
+    padding: 6.5rem 1.75rem 2rem 1.75rem;
+  }
+  .scroll-mouse-widget {
+    display: none;
+  }
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .footer-bottom-bar {
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding: 6rem 1.25rem 3rem 1.25rem;
+  }
+  .hero-main-heading {
+    font-size: 2.6rem;
+  }
+  .hero-subheading {
+    font-size: 0.95rem;
+  }
+  .hero-stats-panel {
+    gap: 1.25rem;
+  }
+  .stat-col-divider {
+    display: none;
+  }
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-actions-row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-gold-primary, .btn-dark-secondary {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,155 @@
+/* ===================================================================
+   MEJORA INTERIORS — GLOBAL DESIGN SYSTEM & VARIABLES
+   =================================================================== */
+
+:root {
+  /* Brand Luxury Palette */
+  --color-gold: #C5A46D;
+  --color-gold-light: #E8D3A8;
+  --color-gold-dark: #8F7243;
+  --color-gold-glow: rgba(197, 164, 109, 0.35);
+
+  --color-espresso: #1A1612;
+  --color-chocolate: #14120F;
+  --color-black: #0C0B0A;
+  --color-surface: #171512;
+  --color-surface-translucent: rgba(23, 21, 18, 0.78);
+
+  --color-cream: #FBF8F2;
+  --color-ivory: #F5EFE6;
+  --color-beige: #D8C7B0;
+  --color-muted: #A39B8E;
+
+  --color-border: rgba(197, 164, 109, 0.25);
+  --color-border-hover: rgba(197, 164, 109, 0.65);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  /* Transitions */
+  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.2s ease-out;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-cream);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-chocolate);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-dark);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Gold Selection */
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+}
+
+/* General Layout Wrappers */
+.page-wrapper {
+  min-height: 100vh;
+  padding: 8rem 3.5rem 5rem 3.5rem;
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  max-width: 52rem;
+  margin: 0 auto 4rem auto;
+}
+
+.page-eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+}
+
+.page-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 4.5vw, 3.85rem);
+  color: #FFFBF5;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.page-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+/* Gold Text Accent */
+.gold-text {
+  color: var(--color-gold);
+}
+.gold-italic {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-gold);
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes dropSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-90px) scale(0.96);
+  }
+  65% {
+    opacity: 1;
+    transform: translateY(6px) scale(1.008);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
